@@ -8,7 +8,7 @@ Build using your favorite version of .net like this:
 Usage
 
     Usage: wk [/d] [/e] [/f] [/o] [/p:<path>] [/s:<filespec>] command
-      Walk:      Recursively walk the filesystem executing commands on files or directories.
+      Walk:      Recursively walk the filesystem executing commands on files or in directories.
       arguments: command     The command invoked.
                  /d          Walk directories, not files. Executes command in each directory.
                  /e          Display errors when folders/files can't be enumerated. Probably access denied.
