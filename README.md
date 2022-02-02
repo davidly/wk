@@ -23,6 +23,7 @@ Usage
                  wk /p:d:\jbrekkie /s:*.jpg imgc {n} /o:out_{n} /l:2000
                  wk /o /s:*.jpg ic {N} /o:200_{N} /l:200
                  wk /d /p:.. /s:*lee* pv
+                 wk /d /f /o git pull
       notes:     Optionally: use {B} as the target file's Basename (e.g. foo)
                                  {N} as the target file's Name (e.g. foo.txt)
                                  {P} as the target file's Path (e.g. c:\x\foo.txt)
