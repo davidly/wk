@@ -11,7 +11,7 @@ class Walk
     static void Usage()
     {
         Console.WriteLine( @"Usage: wk [/d] [/e] [/f] [/o] [/p:<path>] [/s:<filespec>] command" );
-        Console.WriteLine( @"  Walk:      Recursively walk the filesystem executing commands on files or directories." );
+        Console.WriteLine( @"  Walk:      Recursively walk the filesystem executing commands on files or in directories." );
         Console.WriteLine( @"  arguments: command     The command invoked." );
         Console.WriteLine( @"             /d          Walk directories, not files. Executes command in each directory." );
         Console.WriteLine( @"             /e          Display errors when folders/files can't be enumerated. Probably access denied." );
@@ -23,9 +23,10 @@ class Walk
         Console.WriteLine( @"  examples:  wk /s:*.tif tifzip {n}" );
         Console.WriteLine( @"             wk /p:d:\photos /s:*.tif tifzip {n}" );
         Console.WriteLine( @"             wk /q /o /p:.. /s:*.txt cmd /c type {P}" );
-        Console.WriteLine( @"             wk /p:d:\jbrekkie /s:*.jpg imgc {n} /o:out_{n} /l:2000" );
+        Console.WriteLine( @"             wk /p:d:\jbrekkie /s:*.jpg ic {n} /o:out_{n} /l:2000" );
         Console.WriteLine( @"             wk /o /s:*.jpg ic {N} /o:200_{N} /l:200" );
         Console.WriteLine( @"             wk /d /p:.. /s:*lee* pv" );
+        Console.WriteLine( @"             wk /d /f /o git pull" );
         Console.WriteLine( @"  notes:     Optionally: use {B} as the target file's Basename (e.g. foo)" );
         Console.WriteLine( @"                             {N} as the target file's Name (e.g. foo.txt)" );
         Console.WriteLine( @"                             {P} as the target file's Path (e.g. c:\x\foo.txt)" );
