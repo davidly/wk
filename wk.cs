@@ -21,7 +21,7 @@ class Walk
         Console.WriteLine( @"             /q          Quiet; only generate output from child processes. Overrides /e" );
         Console.WriteLine( @"             /s          The files for which command is invoked. Default is *.* (all files)." );
         Console.WriteLine( @"  examples:  wk /s:*.tif tifzip {n}" );
-        Console.WriteLine( @"             wk /p:d:\photos /s:*.tif tifzip {n}" );
+        Console.WriteLine( @"             wk /p:d:\photos /s:*.tif tz {n}" );
         Console.WriteLine( @"             wk /q /o /p:.. /s:*.txt cmd /c type {P}" );
         Console.WriteLine( @"             wk /p:d:\jbrekkie /s:*.jpg ic {n} /o:out_{n} /l:2000" );
         Console.WriteLine( @"             wk /o /s:*.jpg ic {N} /o:200_{N} /l:200" );
