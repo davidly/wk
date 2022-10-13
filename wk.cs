@@ -197,10 +197,10 @@ class Walk
 
         if ( null != arguments )
         {
-            arguments.Replace( "{B}", "{b}" );
-            arguments.Replace( "{D}", "{d}" );
-            arguments.Replace( "{N}", "{n}" );
-            arguments.Replace( "{P}", "{p}" );
+            arguments = arguments.Replace( "{B}", "{b}" );
+            arguments = arguments.Replace( "{D}", "{d}" );
+            arguments = arguments.Replace( "{N}", "{n}" );
+            arguments = arguments.Replace( "{P}", "{p}" );
         }
 
         path = Path.GetFullPath( path );
